@@ -53,7 +53,7 @@ export default function Home() {
           <div className="relative h-screen aspect-auto bg-cover bg-fixed bg-[url('/images/about/about-me-image.png')] bg-no-repeat"></div>
         </div>
 
-        <div id="about-me" className="w-full h-full relative">
+        <div id="experience" className="w-full h-full relative">
           <div className="relative h-screen aspect-auto bg-cover bg-[url('/images/about/experience-page.png')] bg-no-repeat"></div>
         </div>
 
