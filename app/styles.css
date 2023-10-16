@@ -121,7 +121,7 @@
   #contact-form {
     width: 30%;
     height: 60%;
-    transform: translateX(10%) translateY(-10%);
+    transform: translateX(10%) translateY(-30%);
   }
 
   .form {
@@ -141,7 +141,7 @@
   #contact-form {
     width: 30%;
     height: 60%;
-    transform: translateX(10%) translateY(-25%);
+    transform: translateX(10%) translateY(-40%);
   }
 
   .form {
@@ -161,7 +161,7 @@
   #contact-form {
     width: 30%;
     height: 60%;
-    transform: translateX(10%) translateY(-30%);
+    transform: translateX(10%) translateY(-35%);
   }
 
   .form {
@@ -181,7 +181,7 @@
   #contact-form {
     width: 30%;
     height: 60%;
-    transform: translateX(10%) translateY(-40%);
+    transform: translateX(10%) translateY(-45%);
   }
 
   .form {
@@ -241,7 +241,7 @@
   #contact-form {
     width: 25%;
     height: 30%;
-    transform: translateX(10%) translateY(-30%);
+    transform: translateX(10%) translateY(-25%);
   }
 
   .form {

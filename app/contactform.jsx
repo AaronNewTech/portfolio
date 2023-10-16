@@ -90,8 +90,11 @@ const ContactForm = () => {
            />
           </label>
           <button
-          type='submit'
-          className='bg-tertiary py-1 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl'>{loading ? 'Sending...' : 'Send'}</button>
+  type='submit'
+  className='bg-blue-500 py-2 px-4 rounded-lg text-white font-bold shadow-md shadow-primary outline-none w-fit transition duration-300 transform hover:scale-105'
+>
+  {loading ? 'Sending...' : 'Send'}
+</button>
         </form>
      
 
