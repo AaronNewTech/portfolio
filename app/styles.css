@@ -1,64 +1,71 @@
 /* styles.css */
-/* .container {
+
+#sticky-top-bar {
   width: 100%;
-  height: auto;
-  position: relative;
-} */
-
-/* #main {
-  overflow: hidden;
-} */
-
-/* Styling for the outer container div */
-.sticky-top-bar {
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 50;
   background-color: black;
   color: white;
   margin: 0;
-  padding-left: 1rem; /* Adjust the left padding as needed */
-  padding-right: 1rem; /* Adjust the right padding as needed */
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
-/* Styling for the inner div with flex layout */
-.sticky-top-bar-inner {
+#sticky-top-bar-inner {
   position: sticky;
   top: 0;
   z-index: 50;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 1rem; /* Adjust the top padding as needed for large screens */
-  margin-left: 1rem; /* Adjust the left margin as needed for large screens */
-  margin-right: 1rem; /* Adjust the right margin as needed for large screens */
+  padding-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
-/* Media query for smaller screens like 'lg' (large screens) */
-@media (max-width: 1024px) {
-  .sticky-top-bar-inner {
-    padding-top: 0; /* Remove top padding for smaller screens */
-    margin-left: 0; /* Remove left margin for smaller screens */
-    margin-right: 0; /* Remove right margin for smaller screens */
+@media (max-width: 1000px) {
+  #sticky-top-bar {
+    font-size: 15px;
+    position: fixed;
+    padding-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    justify-content: none;
+  }
+  #sticky-top-bar-inner {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: none;
+    padding-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
 
+@media (max-width: 700px) {
+  #sticky-top-bar {
+    font-size: 10px;
+    position: fixed;
+    padding-top: 0;
+  }
+  #sticky-top-bar-inner {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 
 #navbar-container {
   max-width: 100%;
 }
-
-/* @media screen and (max-width: 800px) {
-  #navbar-container {
-    
-    max-width: 30%;
-    transform: translateX(-40%) translateY(0%);
-    display: flex;
-    justify-content: none;
-  }
-
-  
-} */
 
 #homepage-image,
 #about-me,
@@ -87,11 +94,9 @@
   z-index: 4;
 }
 
-/* .homepage-2 {
+.form {
   width: 100%;
-  height: auto;
-  position: relative;
-} */
+}
 
 #contact-text {
   font-size: 30px;
@@ -99,12 +104,10 @@
 }
 
 #contact-form {
-  max-width: 20%; /* Change to max-width */
-  width: 100%; /* Add width 100% to fill the container */
+  width: 30%;
   max-height: 100%;
-  height: 100%;
   position: absolute;
-  transform: translateX(35%) translateY(23%);
+  transform: translateX(15%) translateY(25%);
   z-index: 4;
 }
 
@@ -113,40 +116,85 @@
   max-height: 100%;
 }
 
-@media screen and (max-width: 1500px) {
-  /* #form, */
+@media (max-width: 1000px) {
   #contact-form {
-    width: 80%;
-    display: flex;
-    
-    justify-content: space-around;
-    transform: translateX(30%) translateY(20%);
+    width: 30%;
+    height: 60%;
+    transform: translateX(10%) translateY(-10%);
+  }
+
+  .form {
+    font-size: 10px;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  #contact-text {
+    font-size: 20px;
+    max-width: 100%;
+    max-height: 100%;
   }
 }
 
-@media screen and (max-width: 1400px) {
+@media (max-width: 800px) {
   #contact-form {
-    width: 70%;
-    display: flex;
-    
-    justify-content: space-around;
-    transform: translateX(20%) translateY(10%);
+    width: 30%;
+    height: 60%;
+    transform: translateX(10%) translateY(-25%);
+  }
+
+  .form {
+    font-size: 8px;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  #contact-text {
+    font-size: 12px;
+    max-width: 100%;
+    max-height: 100%;
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media (max-width: 700px) {
   #contact-form {
-    width: 50%;
-    display: flex;
-    
-    justify-content: space-around;
-    transform: translateX(27%) translateY(5%);
+    width: 30%;
+    height: 60%;
+    transform: translateX(10%) translateY(-30%);
+  }
+
+  .form {
+    font-size: 8px;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  #contact-text {
+    font-size: 12px;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  #contact-form {
+    width: 30%;
+    height: 60%;
+    transform: translateX(10%) translateY(-40%);
+  }
+
+  .form {
+    font-size: 8px;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  #contact-text {
+    font-size: 12px;
+    max-width: 100%;
+    max-height: 100%;
   }
 }
 
 #contact-computer {
-  max-width: 30%; /* Change to max-width */
-  width: 100%; /* Add width 100% to fill the container */
+  max-width: 30%;
+  width: 100%;
   position: absolute;
   transform: translateX(190%) translateY(-120%);
 }
@@ -170,7 +218,7 @@
 #javascript-logo,
 #css-logo,
 #html-logo {
-  max-width: 60%;
+  max-width: 100%;
 }
 
 .project-links {
@@ -197,9 +245,18 @@
   #cocktail-creator-icon {
     width: 80%;
     display: flex;
-    
+
     justify-content: space-around;
     transform: translateX(10%) translateY(-130%);
+  }
+
+  #python-logo,
+  #flask-logo,
+  #react-logo,
+  #javascript-logo,
+  #css-logo,
+  #html-logo {
+    max-width: 100%;
   }
 }
 
@@ -209,9 +266,17 @@
   #cocktail-creator-icon {
     width: 70%;
     display: flex;
-    
+
     justify-content: space-around;
     transform: translateX(20%) translateY(-120%);
+  }
+  #python-logo,
+  #flask-logo,
+  #react-logo,
+  #javascript-logo,
+  #css-logo,
+  #html-logo {
+    max-width: 80%;
   }
 }
 
@@ -221,40 +286,16 @@
   #cocktail-creator-icon {
     width: 50%;
     display: flex;
-    
+
     justify-content: space-around;
     transform: translateX(50%) translateY(-150%);
   }
+  #python-logo,
+#flask-logo,
+#react-logo,
+#javascript-logo,
+#css-logo,
+#html-logo {
+  max-width: 60%;
 }
-
-/* .about-me-section {
-  height: 100vh;
-  background-image: url("/images/about/about-me-image.png");
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
 }
-
-.experience-section {
-  height: 100vh;
-  background-image: url("/images/about/experience-page.png");
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-}
-
-.projects-section {
-  height: 100vh;
-  background-image: url("/images/homepage2/12.png");
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-}
-
-.contact-me-section {
-  height: 100vh;
-  background-image: url("/images/contact/22.png");
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-} */

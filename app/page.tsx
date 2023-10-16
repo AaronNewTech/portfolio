@@ -121,10 +121,10 @@ export default function Home() {
       </div>
 
       <div className="homepage-5">
-        <div className="contact-container">
+       
           <div>
             <ContactForm />
-          </div>
+          
           <img id="contact-me" src="/images/contact/22.png" />
           <div>
             <img

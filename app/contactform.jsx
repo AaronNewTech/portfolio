@@ -48,14 +48,14 @@ const ContactForm = () => {
     }
     )
   }
+  
   return (
     <div id='contact-form' className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
         
-        <form id='form'
+        <form 
         ref={formRef}
         onSubmit={handleSubmit}
-        className='mt-12 flex flex-col gap-8'>
-          <h1 id='contact-text'>CONTACT ME</h1>
+        className=' form mt-12 flex flex-col '><h1 id="contact-text">CONTACT ME</h1>
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Name</span>
             <input
