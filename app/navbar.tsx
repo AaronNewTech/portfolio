@@ -4,8 +4,8 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <div className="sticky top-0 z-50 bg-black text-white my- px-4">
-      <div className="sticky top-0 z-50 flex items-center justify-between lg:py-4 ml-10 mr-10">
+    <div className="sticky-top-bar">
+      <div className="sticky-top-bar-inner">
         <div className="w-1/3 mr-10">
           <Image
             src="/images/homepage1/aaron.png"

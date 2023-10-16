@@ -6,7 +6,58 @@
 } */
 
 /* #main {
-  min-height: 100vh;
+  overflow: hidden;
+} */
+
+/* Styling for the outer container div */
+.sticky-top-bar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding-left: 1rem; /* Adjust the left padding as needed */
+  padding-right: 1rem; /* Adjust the right padding as needed */
+}
+
+/* Styling for the inner div with flex layout */
+.sticky-top-bar-inner {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem; /* Adjust the top padding as needed for large screens */
+  margin-left: 1rem; /* Adjust the left margin as needed for large screens */
+  margin-right: 1rem; /* Adjust the right margin as needed for large screens */
+}
+
+/* Media query for smaller screens like 'lg' (large screens) */
+@media (max-width: 1024px) {
+  .sticky-top-bar-inner {
+    padding-top: 0; /* Remove top padding for smaller screens */
+    margin-left: 0; /* Remove left margin for smaller screens */
+    margin-right: 0; /* Remove right margin for smaller screens */
+  }
+}
+
+
+#navbar-container {
+  max-width: 100%;
+}
+
+/* @media screen and (max-width: 800px) {
+  #navbar-container {
+    
+    max-width: 30%;
+    transform: translateX(-40%) translateY(0%);
+    display: flex;
+    justify-content: none;
+  }
+
+  
 } */
 
 #homepage-image,
