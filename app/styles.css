@@ -117,7 +117,7 @@
   max-height: 100%;
 }
 
-@media (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
   #contact-form {
     width: 30%;
     height: 60%;
@@ -137,7 +137,7 @@
   }
 }
 
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   #contact-form {
     width: 30%;
     height: 60%;
@@ -157,7 +157,7 @@
   }
 }
 
-@media (max-width: 700px) {
+@media screen and (max-width: 700px) {
   #contact-form {
     width: 30%;
     height: 60%;
@@ -177,7 +177,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   #contact-form {
     width: 30%;
     height: 60%;
@@ -197,11 +197,11 @@
   }
 }
 
-@media (max-width: 400px) {
+@media screen and (max-width: 400px) {
   #contact-form {
     width: 25%;
     height: 40%;
-    transform: translateX(10%) translateY(-30%);
+    transform: translateX(10%) translateY(-25%);
   }
 
   .form {
@@ -217,11 +217,31 @@
   }
 }
 
-@media (max-width: 300px) {
+/* @media (max-width: 310px) {
   #contact-form {
     width: 25%;
     height: 30%;
     transform: translateX(10%) translateY(-25%);
+  }
+
+  .form {
+    font-size: 4px;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  #contact-text {
+    color: white;
+    font-size: 6px;
+    max-width: 100%;
+    max-height: 100%;
+  }
+} */
+
+@media screen and (max-width: 300px) {
+  #contact-form {
+    width: 25%;
+    height: 30%;
+    transform: translateX(10%) translateY(-20%);
   }
 
   .form {
@@ -336,11 +356,11 @@
     transform: translateX(50%) translateY(-150%);
   }
   #python-logo,
-  #flask-logo,
-  #react-logo,
-  #javascript-logo,
-  #css-logo,
-  #html-logo {
-    max-width: 60%;
-  }
+#flask-logo,
+#react-logo,
+#javascript-logo,
+#css-logo,
+#html-logo {
+  max-width: 60%;
+}
 }
