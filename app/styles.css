@@ -42,17 +42,62 @@
   position: relative;
 } */
 
+#contact-text {
+  font-size: 30px;
+  font-weight: bolder;
+}
+
 #contact-form {
-  width: 20%;
-  transform: translateX(25%) translateY(30%);
+  max-width: 20%; /* Change to max-width */
+  width: 100%; /* Add width 100% to fill the container */
+  max-height: 100%;
+  height: 100%;
   position: absolute;
+  transform: translateX(35%) translateY(23%);
   z-index: 4;
 }
 
+#form {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media screen and (max-width: 1500px) {
+  /* #form, */
+  #contact-form {
+    width: 80%;
+    display: flex;
+    
+    justify-content: space-around;
+    transform: translateX(30%) translateY(20%);
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  #contact-form {
+    width: 70%;
+    display: flex;
+    
+    justify-content: space-around;
+    transform: translateX(20%) translateY(10%);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #contact-form {
+    width: 50%;
+    display: flex;
+    
+    justify-content: space-around;
+    transform: translateX(27%) translateY(5%);
+  }
+}
+
 #contact-computer {
-  width: 30%;
-  transform: translateX(190%) translateY(-120%);
+  max-width: 30%; /* Change to max-width */
+  width: 100%; /* Add width 100% to fill the container */
   position: absolute;
+  transform: translateX(190%) translateY(-120%);
 }
 
 .technologies {
@@ -68,7 +113,12 @@
   max-width: 100%;
 }
 
-#python-logo, #flask-logo, #react-logo, #javascript-logo, #css-logo, #html-logo {
+#python-logo,
+#flask-logo,
+#react-logo,
+#javascript-logo,
+#css-logo,
+#html-logo {
   max-width: 60%;
 }
 
@@ -78,15 +128,52 @@
   display: flex;
   position: absolute;
   justify-content: space-around;
-  transform: translateX(0%) translateY(-250%);
+  transform: translateX(0%) translateY(-280%);
 }
 
 .project-links img {
   max-width: 100%;
 }
 
-#speech-trainer-icon, #cocktail-creator-icon {
+#speech-trainer-icon,
+#cocktail-creator-icon {
   max-width: 100%;
+}
+
+@media screen and (max-width: 1700px) {
+  .project-links,
+  #speech-trainer-icon,
+  #cocktail-creator-icon {
+    width: 80%;
+    display: flex;
+    
+    justify-content: space-around;
+    transform: translateX(10%) translateY(-130%);
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .project-links,
+  #speech-trainer-icon,
+  #cocktail-creator-icon {
+    width: 70%;
+    display: flex;
+    
+    justify-content: space-around;
+    transform: translateX(20%) translateY(-120%);
+  }
+}
+
+@media screen and (max-width: 958px) {
+  .project-links,
+  #speech-trainer-icon,
+  #cocktail-creator-icon {
+    width: 50%;
+    display: flex;
+    
+    justify-content: space-around;
+    transform: translateX(50%) translateY(-150%);
+  }
 }
 
 /* .about-me-section {
@@ -120,4 +207,3 @@
   background-attachment: fixed;
   background-repeat: no-repeat;
 } */
-
