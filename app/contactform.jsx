@@ -55,16 +55,16 @@ const ContactForm = () => {
         <form 
         ref={formRef}
         onSubmit={handleSubmit}
-        className=' form mt-12 flex flex-col '><h1 id="contact-text">CONTACT ME</h1>
+        className=' form  flex flex-col '><h1 id="contact-text">CONTACT ME</h1>
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Name</span>
+            <span className='text-white font-medium '>Name</span>
             <input
             type='text'
             name='name'
             value={form.name}
             onChange={handleChange}
             placeholder="Enter your name"
-            className='bg-tertiary py-4 px-6 placeholder:text-secondary text-black rounded-lg outline-none border-none font-medium'
+            className='bg-tertiary py-2 px-6 placeholder:text-secondary text-black rounded-lg outline-none border-none font-medium'
            />
           </label>
           <label className='flex flex-col'>
@@ -75,7 +75,7 @@ const ContactForm = () => {
             value={form.email}
             onChange={handleChange}
             placeholder="Enter your email"
-            className='bg-tertiary py-4 px-6 placeholder:text-secondary text-black rounded-lg outline-none border-none font-medium'
+            className='bg-tertiary py-2 px-6 placeholder:text-secondary text-black rounded-lg outline-none border-none font-medium'
            />
           </label>
           <label className='flex flex-col'>
@@ -86,12 +86,12 @@ const ContactForm = () => {
             value={form.message}
             onChange={handleChange}
             placeholder="Enter your message"
-            className='bg-tertiary py-4 px-6 placeholder:text-secondary text-black rounded-lg outline-none border-none font-medium'
+            className='bg-tertiary py-2 px-6 placeholder:text-secondary text-black rounded-lg outline-none border-none font-medium'
            />
           </label>
           <button
           type='submit'
-          className='bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl'>{loading ? 'Sending...' : 'Send'}</button>
+          className='bg-tertiary py-1 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl'>{loading ? 'Sending...' : 'Send'}</button>
         </form>
      
 
