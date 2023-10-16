@@ -217,26 +217,6 @@
   }
 }
 
-/* @media (max-width: 310px) {
-  #contact-form {
-    width: 25%;
-    height: 30%;
-    transform: translateX(10%) translateY(-25%);
-  }
-
-  .form {
-    font-size: 4px;
-    max-width: 100%;
-    max-height: 100%;
-  }
-  #contact-text {
-    color: white;
-    font-size: 6px;
-    max-width: 100%;
-    max-height: 100%;
-  }
-} */
-
 @media (max-width: 300px) {
   #contact-form {
     width: 25%;
@@ -356,11 +336,11 @@
     transform: translateX(50%) translateY(-150%);
   }
   #python-logo,
-#flask-logo,
-#react-logo,
-#javascript-logo,
-#css-logo,
-#html-logo {
-  max-width: 60%;
-}
+  #flask-logo,
+  #react-logo,
+  #javascript-logo,
+  #css-logo,
+  #html-logo {
+    max-width: 60%;
+  }
 }
