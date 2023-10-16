@@ -1,0 +1,123 @@
+/* styles.css */
+/* .container {
+  width: 100%;
+  height: auto;
+  position: relative;
+} */
+
+/* #main {
+  min-height: 100vh;
+} */
+
+#homepage-image,
+#about-me,
+#experience,
+#projects,
+#contact-me {
+  width: 100%;
+}
+
+#computer {
+  width: 40%;
+  transform: translateX(140%) translateY(-160%);
+  position: absolute;
+}
+
+#about-me-button {
+  width: 20%;
+  transform: translateX(20%) translateY(-200%);
+  position: absolute;
+}
+
+#projects-button {
+  width: 20%;
+  transform: translateX(130%) translateY(-203%);
+  position: absolute;
+  z-index: 4;
+}
+
+/* .homepage-2 {
+  width: 100%;
+  height: auto;
+  position: relative;
+} */
+
+#contact-form {
+  width: 20%;
+  transform: translateX(25%) translateY(30%);
+  position: absolute;
+  z-index: 4;
+}
+
+#contact-computer {
+  width: 30%;
+  transform: translateX(190%) translateY(-120%);
+  position: absolute;
+}
+
+.technologies {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  justify-content: space-around;
+  transform: translateX(0%) translateY(-120%);
+}
+
+.technologies img {
+  max-width: 100%;
+}
+
+#python-logo, #flask-logo, #react-logo, #javascript-logo, #css-logo, #html-logo {
+  max-width: 60%;
+}
+
+.project-links {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  justify-content: space-around;
+  transform: translateX(0%) translateY(-250%);
+}
+
+.project-links img {
+  max-width: 100%;
+}
+
+#speech-trainer-icon, #cocktail-creator-icon {
+  max-width: 100%;
+}
+
+/* .about-me-section {
+  height: 100vh;
+  background-image: url("/images/about/about-me-image.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.experience-section {
+  height: 100vh;
+  background-image: url("/images/about/experience-page.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.projects-section {
+  height: 100vh;
+  background-image: url("/images/homepage2/12.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.contact-me-section {
+  height: 100vh;
+  background-image: url("/images/contact/22.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+} */
+

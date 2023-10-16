@@ -1,4 +1,4 @@
-"use client"; // This is a client component
+"use client"; 
 import React from 'react'
 import { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
@@ -56,35 +56,35 @@ const ContactForm = () => {
         onSubmit={handleSubmit}
         className='mt-12 flex flex-col gap-8'>
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your Name</span>
+            <span className='text-white font-medium mb-4'>Name</span>
             <input
             type='text'
             name='name'
             value={form.name}
             onChange={handleChange}
-            placeholder="What's your name?"
+            placeholder="Enter your name"
             className='bg-tertiary py-4 px-6 placeholder:text-secondary text-black rounded-lg outline-none border-none font-medium'
            />
           </label>
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your email</span>
+            <span className='text-white font-medium mb-4'>Email</span>
             <input
             type='email'
             name='email'
             value={form.email}
             onChange={handleChange}
-            placeholder="What's your email?"
+            placeholder="Enter your email"
             className='bg-tertiary py-4 px-6 placeholder:text-secondary text-black rounded-lg outline-none border-none font-medium'
            />
           </label>
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your message</span>
+            <span className='text-white font-medium mb-4'>Message</span>
             <textarea
             // rows="7"
             name='message'
             value={form.message}
             onChange={handleChange}
-            placeholder="What do you want to say?"
+            placeholder="Enter your message"
             className='bg-tertiary py-4 px-6 placeholder:text-secondary text-black rounded-lg outline-none border-none font-medium'
            />
           </label>
