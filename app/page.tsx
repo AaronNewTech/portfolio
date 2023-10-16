@@ -60,22 +60,22 @@ export default function Home() {
 
         <div className="project-links">
           <div>
-            {/* <Link href="https://www.loom.com/share/41e418e86c974b9385b94bf251bba392"> */}
+            <Link href="https://www.loom.com/share/41e418e86c974b9385b94bf251bba392">
               <img
                 id="speech-trainer-icon"
                 src="/images/homepage2/13.png"
                 alt="speech-trainer-project"
               />
-            {/* </Link> */}
+            </Link>
           </div>
           <div>
-            {/* <Link href="https://www.loom.com/share/38c4a54a33fa4ffc826e04214d7fbd3d"> */}
+            <Link href="https://www.loom.com/share/38c4a54a33fa4ffc826e04214d7fbd3d">
               <img
                 id="cocktail-creator-icon"
                 src="/images/homepage2/14.png"
                 alt="cocktail-creator-project"
               />
-            {/* </Link> */}
+            </Link>
           </div>
         </div>
 
