@@ -18,6 +18,13 @@ const ContactForm = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
+  
+    // Check for empty fields
+    if (!form.name || !form.email || !form.message) {
+      alert("Please fill in all the required fields.");
+      return;
+    }
+  
     setLoading(true);
     emailjs
       .send(
@@ -43,11 +50,13 @@ const ContactForm = () => {
           });
         },
         (error) => {
-          setLoading(false), console.log(error);
+          setLoading(false);
+          console.log(error);
           alert("Something went wrong");
         }
       );
   };
+  
 
   return (
     <div
