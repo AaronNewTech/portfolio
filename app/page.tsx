@@ -63,7 +63,7 @@ export default function Home() {
           <div>
             <Link
               target="_blank"
-              href="https://www.loom.com/share/41e418e86c974b9385b94bf251bba392"
+              href="https://aaron-hall-smith-speech-trainer.vercel.app/"
             >
               <img
                 id="speech-trainer-icon"
